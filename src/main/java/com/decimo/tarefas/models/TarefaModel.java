@@ -16,7 +16,7 @@ public class TarefaModel {
     @Column(name = "Data de vencimento")
     private LocalDate dataVencimento;
     @Column(name = "Status de conclusão")
-    private String cincluida;
+    private Boolean concluida;
 
     public Long getId() {
         return id;
@@ -42,11 +42,11 @@ public class TarefaModel {
         this.dataVencimento = dataVencimento;
     }
 
-    public String getCincluida() {
-        return cincluida;
+    public Boolean getConcluida() {
+        return concluida;
     }
 
-    public void setCincluida(String cincluida) {
-        this.cincluida = cincluida;
+    public void setConcluida(Boolean concluida) {
+        this.concluida = concluida;
     }
 }
